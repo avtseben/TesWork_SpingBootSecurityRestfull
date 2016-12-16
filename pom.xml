@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>ru.alexandertsebenko</groupId>
   <artifactId>TesWork_SpingBootSecurityRestfull</artifactId>
-  <packaging>jar</packaging>
+  <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
   <name>TesWork_SpingBootSecurityRestfull</name>
   <url>http://maven.apache.org</url>
@@ -22,7 +22,7 @@
 	<dependency>
 	    <groupId>org.springframework.boot</groupId>
 	    <artifactId>spring-boot-starter-tomcat</artifactId>
-	    <scope>compile</scope>
+	    <scope>provided</scope>
 	</dependency>
 	<dependency>
 	    <groupId>org.springframework.boot</groupId>
