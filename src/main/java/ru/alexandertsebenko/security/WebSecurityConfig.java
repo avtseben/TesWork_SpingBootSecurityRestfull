@@ -41,13 +41,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		Account account = accountRepository.findByUsername(username);
 		if(account != null) {
 
-		    User user = new User(account.getUsername(), account.getPassword(), true, true, true, true,
+		return new User(account.getUsername(), account.getPassword(), true, true, true, true,
 			    AuthorityUtils.createAuthorityList(account.getRole()));
 
-		System.out.println(user);
-		return user;
 		} else {
-		    System.out.println("no such user");
 		    throw new UsernameNotFoundException("could not find the user '"
 				+ username + "'");
 		}
